@@ -1,0 +1,15 @@
+<section class="hero">
+    <div class="hero_content">
+        <h1 class="hero_title">Labb 3</h1>
+        <p class="hero_subtitle">grunderna i Angular.</p>
+        <a routerLink="/converter" class="btn btn--primary">Konverteraren</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="features_grid">
+        @for (f of features; track f.title) {
+        <app-unit-card [icon]="f.icon" [title]="f.title" [description]="f.description" />
+        }
+    </div>
+</section>

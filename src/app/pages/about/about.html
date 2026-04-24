@@ -1,0 +1,51 @@
+<div class="about-page">
+    <header class="page-header">
+        <h1>Om Labben</h1>
+        <p>Hur webbplatsen skapades och vilka slutsatser som drogs.</p>
+    </header>
+
+    <div class="about-content">
+        <section class="about-section">
+            <h2>Syfte och idé</h2>
+            <p>Webbplatsen skapades som en övningsuppgift i kursen Webbutveckling.
+                Syftet var att lära sig grunderna i Angular.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Teknisk lösning</h2>
+            <h3>Routing</h3>
+            <p>Angulars router används för att navigera mellan de fyra sidorna.
+                Alltdefinieras i <i>app.routes.ts</i>, och <i>RouterLink</i> används i navbaren för markering.
+            </p>
+
+            <h3>Komponenter</h3>
+            <p>Jag använde två standalone-komponenter.</p>
+            <ul>
+                <li><i>Navbar</i> - navigationsmenyn</li>
+                <li><i>UnitCard</i> - informationskort som visas på startsidan</li>
+            </ul>
+
+            <h3>Databindning</h3>
+            <p>Konverteringssidan använder Angular för tvåvägsbindning och
+                angulars inbyggda change för att uppdatera det andra fältets värde i realtid.
+            </p>
+
+            <h3>Styling</h3>
+            <p>SCSS används. Globala CSS-variabler och återanvändbara klasser definieras i <i>styles.scss</i>.
+                sidstyling hanteras i
+                varje komponents egen <i>.scss</i> fil.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Teknik</h2>
+            <div class="tech-grid">
+                <span class="tech-badge">Angular 19</span>
+                <span class="tech-badge">TypeScript</span>
+                <span class="tech-badge">SCSS</span>
+                <span class="tech-badge">Angular Router</span>
+                <span class="tech-badge">FormsModule</span>
+                <span class="tech-badge">Git & GitHub</span>
+            </div>
+        </section>
+    </div>
+</div>
