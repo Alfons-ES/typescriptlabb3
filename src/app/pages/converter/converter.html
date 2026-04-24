@@ -3,41 +3,41 @@
         <h1>Enhetskalkylator</h1>
     </header>
 
-    <div class="converter-grid">
-        <div class="converter-card">
+    <div id="converters">
+        <div>
             <h2>Längd</h2>
-            <div class="input-row">
-                <div class="input-group">
+            <div>
+                <div>
                     <label for="meters">Meter (m)</label>
                     <input id="meters" type="number" [(ngModel)]="meters" (ngModelChange)="onMetersChange()"
                         placeholder="0" />
                 </div>
-                <div class="arrow">⇄</div>
-                <div class="input-group">
+                <div>⇄</div>
+                <div>
                     <label for="feet">Fot (ft)</label>
                     <input id="feet" type="number" [(ngModel)]="feet" (ngModelChange)="onFeetChange()"
                         placeholder="0" />
                 </div>
             </div>
-            <p class="formula">1 meter = 3.28084 fot</p>
+            <p>1 meter = 3.28084 fot</p>
         </div>
 
-        <div class="converter-card">
+        <div>
             <h2>Temperatur</h2>
-            <div class="input-row">
-                <div class="input-group">
+            <div>
+                <div>
                     <label for="celsius">Celsius (°C)</label>
                     <input id="celsius" type="number" [(ngModel)]="celsius" (ngModelChange)="onCelsiusChange()"
                         placeholder="0" />
                 </div>
-                <div class="arrow">⇄</div>
-                <div class="input-group">
+                <div>⇄</div>
+                <div>
                     <label for="fahrenheit">Fahrenheit (°F)</label>
                     <input id="fahrenheit" type="number" [(ngModel)]="fahrenheit" (ngModelChange)="onFahrenheitChange()"
                         placeholder="32" />
                 </div>
             </div>
-            <p class="formula">°F = (°C × 9/5) + 32</p>
+            <p>°F = (°C * 9/5) + 32</p>
         </div>
     </div>
 </div>

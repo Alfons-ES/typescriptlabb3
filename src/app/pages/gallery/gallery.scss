@@ -1,0 +1,20 @@
+.page-header {
+    text-align: center;
+}
+
+#imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 900px) {
+    #imgs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catimg {
+        margin: 10px;
+    }
+}

@@ -15,27 +15,39 @@ export class Converter {
   fahrenheit: number | null = null;
 
   onMetersChange() {
-    this.feet = this.meters !== null
-      ? Math.round(this.meters * 3.28084 * 1000) / 1000
-      : null;
+    if (this.meters !== null) {
+      let result = this.meters * 3.28084;
+      this.feet = Math.round(result * 1000) / 1000;
+    } else {
+      this.feet = null;
+    }
   }
 
   onFeetChange() {
-    this.meters = this.feet !== null
-      ? Math.round(this.feet / 3.28084 * 1000) / 1000
-      : null;
+    if (this.feet !== null) {
+      let result = this.feet / 3.28084;
+      this.meters = Math.round(result * 1000) / 1000;
+    } else {
+      this.meters = null;
+    }
   }
 
   onCelsiusChange() {
-    this.fahrenheit = this.celsius !== null
-      ? Math.round((this.celsius * 9 / 5 + 32) * 100) / 100
-      : null;
+    if (this.celsius !== null) {
+      let result = (this.celsius * 9 / 5) + 32;
+      this.fahrenheit = Math.round(result * 100) / 100;
+    } else {
+      this.fahrenheit = null;
+    }
   }
 
   onFahrenheitChange() {
-    this.celsius = this.fahrenheit !== null
-      ? Math.round(((this.fahrenheit - 32) * 5 / 9) * 100) / 100
-      : null;
+    if (this.fahrenheit !== null) {
+      let result = (this.fahrenheit - 32) * 5 / 9;
+      this.celsius = Math.round(result * 100) / 100;
+    } else {
+      this.celsius = null;
+    }
   }
 
 }

@@ -1,17 +1,9 @@
 <nav class="navbar">
-    <div class="navbar">
-        <a routerLink="/">Labb 3</a>
-    </div>
 
-    <button class="navbar_toggle" (click)="toggleMenu()" aria-label="Meny">
-        <span></span><span></span><span></span>
-    </button>
-
-    <ul class="navbar_links" [class.open]="menuOpen">
-        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"
-                (click)="menuOpen=false">Hem</a></li>
-        <li><a routerLink="/converter" routerLinkActive="active" (click)="menuOpen=false">Konvertering</a></li>
-        <li><a routerLink="/gallery" routerLinkActive="active" (click)="menuOpen=false">Galleri</a></li>
-        <li><a routerLink="/about" routerLinkActive="active" (click)="menuOpen=false">Om</a></li>
+    <ul>
+        <li><a routerLink=" /" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Hem</a></li>
+        <li><a routerLink="/converter" routerLinkActive="active">Konvertering</a></li>
+        <li><a routerLink="/gallery" routerLinkActive="active">Galleri</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">Om</a></li>
     </ul>
 </nav>
